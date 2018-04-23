@@ -21,7 +21,7 @@ int main(int argc, char* argv[])
         init_pipeline();
         parent_pipeline();
 
-        printf("%d\n", getuid());
+        printf("Parent uid=%d\n", getuid());
 
         pid = create_process();
 

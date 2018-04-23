@@ -172,7 +172,7 @@ void execute_program(arguments_comand_line* arguments)
     if(arguments != NULL)
     {
          setuid(arguments->user_id);
-         printf("%d\n", getuid()); 
+         printf("Child uid=%d\n", getuid()); 
 
          if( arguments->program_name  && arguments->program_name[0])
              execvp(arguments->program_name[0],  arguments->program_name);
