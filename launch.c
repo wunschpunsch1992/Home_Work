@@ -82,14 +82,7 @@ arguments_comand_line* get_arguments(int argc, char *argv[])
     
 }
 
-/*
-    функция "разбирает" командую строку и возвращает объект следующего вида:
-        - user_id:      уникальный идентификатор пользователя
-        - program_name: наименование програаммы с аргументами
 
-         program_name имеет следующую структуру:
-            -
-*/
 static arguments_comand_line* parse_arguments(int argc, char *argv[]){
     
     
